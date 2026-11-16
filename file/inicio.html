@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Huellitas</title>
+
+    <!-- Icono de la pestaña (con ../ porque estamos dentro de "file") -->
+    <link rel="icon" href="../imagenes/logo2.png">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <a href="../index.html">
+            <img src="../imagenes/logo1.png" alt="Logo de Huellitas" class="logo">
+        </a>
+
+        <button id="botonMenu" class="boton-menu">☰</button>
+
+        <nav id="menu" class="menu">
+            <a href="inicio.html" class="activo">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="contacto.html">Contacto</a>
+            <span class="carrito">🛒 Carrito (<span id="contadorCarrito">0</span>)</span>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+    <!-- ===== TÍTULO DE LA PÁGINA ===== -->
+    <section class="titulo-pagina">
+        <h1>Nuestras categorías</h1>
+        <p>En Huellitas encuentras todo lo que tu mascota necesita, organizado en tres categorías.</p>
+    </section>
+
+    <!-- ===== CATEGORÍAS ===== -->
+    <section class="categorias">
+
+        <!-- Categoría 1: Alimentos -->
+        <div class="categoria-bloque">
+            <div class="categoria-imagenes">
+                <img src="../imagenes/alimento-perro.jpg" alt="Alimento para perro">
+                <img src="../imagenes/alimento-gato.jpg" alt="Alimento para gato">
+            </div>
+            <div class="categoria-texto">
+                <h2>🍖 Alimentos</h2>
+                <p>Comida seca y húmeda de buena calidad para perros y gatos de todas las edades.</p>
+                <ul>
+                    <li>Concentrado para cachorros y adultos</li>
+                    <li>Sobres de alimento húmedo</li>
+                    <li>Snacks y premios</li>
+                </ul>
+                <a href="../index.html#productos" class="boton-banner">Ver alimentos</a>
+            </div>
+        </div>
+
+        <!-- Categoría 2: Juguetes -->
+        <div class="categoria-bloque">
+            <div class="categoria-imagenes">
+                <img src="../imagenes/juguete-perro.jpg" alt="Juguete para perro">
+                <img src="../imagenes/juguete-gato.jpg" alt="Juguete para gato">
+            </div>
+            <div class="categoria-texto">
+                <h2>🎾 Juguetes</h2>
+                <p>Juguetes resistentes y divertidos para que tu mascota haga ejercicio y no se aburra.</p>
+                <ul>
+                    <li>Pelotas y cuerdas</li>
+                    <li>Cañas con plumas</li>
+                    <li>Peluches y mordedores</li>
+                </ul>
+                <a href="../index.html#productos" class="boton-banner">Ver juguetes</a>
+            </div>
+        </div>
+
+        <!-- Categoría 3: Accesorios -->
+        <div class="categoria-bloque">
+            <div class="categoria-imagenes">
+                <img src="../imagenes/accesorio-arnes.png" alt="Arnés para perro">
+                <img src="../imagenes/accesorio-collar.png" alt="Collar de cuero">
+            </div>
+            <div class="categoria-texto">
+                <h2>🦴 Accesorios</h2>
+                <p>Todo lo necesario para pasear y cuidar a tu mascota con estilo y seguridad.</p>
+                <ul>
+                    <li>Arneses y correas</li>
+                    <li>Collares con placa</li>
+                    <li>Camas y platos</li>
+                </ul>
+                <a href="../index.html#productos" class="boton-banner">Ver accesorios</a>
+            </div>
+        </div>
+
+    </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-columna">
+            <img src="../imagenes/logo2.png" alt="Huella de Huellitas" class="logo-footer">
+            <p class="footer-nombre">Huellitas</p>
+            <p class="footer-lema">Todo para tu mejor amigo</p>
+        </div>
+        <div class="footer-columna">
+            <h4>Enlaces</h4>
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <p>Calle 10 # 20-30</p>
+            <p>300 123 4567</p>
+            <p>hola@huellitas.com</p>
+        </div>
+        <div class="footer-columna">
+            <h4>Redes sociales</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>WhatsApp</p>
+        </div>
+        <p class="copyright">© 2026 Huellitas - Tienda de mascotas</p>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="botonArriba" class="boton-arriba">↑</button>
+
+    <!-- Scripts (con ../ porque estamos dentro de "file") -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

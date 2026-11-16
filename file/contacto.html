@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Huellitas</title>
+
+    <!-- Icono de la pestaña -->
+    <link rel="icon" href="../imagenes/logo2.png">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../CSS/estilos.css">
+</head>
+<body>
+
+    <!-- ===== ENCABEZADO ===== -->
+    <header class="encabezado">
+        <a href="../index.html">
+            <img src="../imagenes/logo1.png" alt="Logo de Huellitas" class="logo">
+        </a>
+
+        <button id="botonMenu" class="boton-menu">☰</button>
+
+        <nav id="menu" class="menu">
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+            <span class="carrito">🛒 Carrito (<span id="contadorCarrito">0</span>)</span>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+    <!-- ===== TÍTULO DE LA PÁGINA ===== -->
+    <section class="titulo-pagina">
+        <h1>Contáctanos</h1>
+        <p>¿Tienes una pregunta? Escríbenos y te respondemos lo más pronto posible.</p>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contacto">
+
+        <!-- Formulario -->
+        <!-- novalidate: la validación la hacemos con jQuery para mostrar mensajes en español -->
+        <form id="formularioContacto" class="formulario" action="#" method="post" novalidate>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" autocomplete="name" required>
+            <p class="error" id="errorNombre"></p>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+            <p class="error" id="errorCorreo"></p>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje" minlength="10" maxlength="500" required></textarea>
+            <p class="error" id="errorMensaje"></p>
+
+            <button type="submit" id="botonEnviar" class="boton-enviar">Enviar mensaje</button>
+
+            <!-- Este mensaje está oculto y aparece con jQuery -->
+            <p id="mensajeEnviado" class="mensaje-enviado">✅ ¡Gracias! Tu mensaje fue enviado.</p>
+        </form>
+
+        <!-- Datos de contacto -->
+        <div class="datos-contacto">
+            <h2>Nuestros datos</h2>
+            <p>📍 <strong>Dirección:</strong> Calle 10 # 20-30</p>
+            <p>📞 <strong>Teléfono:</strong> 300 123 4567</p>
+            <p>✉️ <strong>Correo:</strong> hola@huellitas.com</p>
+            <p>🕒 <strong>Horario:</strong> lunes a sábado, 8:00 a.m. a 7:00 p.m.</p>
+        </div>
+
+    </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-columna">
+            <img src="../imagenes/logo2.png" alt="Huella de Huellitas" class="logo-footer">
+            <p class="footer-nombre">Huellitas</p>
+            <p class="footer-lema">Todo para tu mejor amigo</p>
+        </div>
+        <div class="footer-columna">
+            <h4>Enlaces</h4>
+            <a href="inicio.html">Inicio</a>
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <p>Calle 10 # 20-30</p>
+            <p>300 123 4567</p>
+            <p>hola@huellitas.com</p>
+        </div>
+        <div class="footer-columna">
+            <h4>Redes sociales</h4>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>WhatsApp</p>
+        </div>
+        <p class="copyright">© 2026 Huellitas - Tienda de mascotas</p>
+    </footer>
+
+    <!-- Botón para volver arriba -->
+    <button id="botonArriba" class="boton-arriba">↑</button>
+
+    <!-- Scripts -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
