@@ -16,7 +16,7 @@
 // Espera a que la página cargue y después ejecuta todo lo de adentro
 $(document).ready(function () {
 
-    // ===== 1. MENÚ HAMBURGUESA (tablet y celular) =====
+    // ===== 1. MENÚ HAMBURGUESA (celular) =====
     // Al tocar el botón ☰...
     $("#botonMenu").click(function () {
         // ...pone o quita la clase "menu-abierto" (como un interruptor).
