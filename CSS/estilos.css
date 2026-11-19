@@ -407,7 +407,7 @@ a {
 .destacado {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 200px;
     background-color: #FFF6DD;
     padding: 40px 140px;
 }
